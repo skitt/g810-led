@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	make bin-linked
+
+override_dh_auto_install:
+	make setup install-lib install-dev SYSTEMDDIR=/lib/systemd/ DESTDIR=$(CURDIR)/debian/tmp
+	mv debian/tmp/etc/udev/rules.d/g810-led.rules debian/g810-led.udev
+	rm -rf debian/tmp/etc
+	mkdir -p debian/tmp/usr/share/doc/g810-led/examples

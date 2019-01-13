@@ -1,0 +1,4 @@
+debian/g810-led.udev
+src/classes/*.o
+src/helpers/*.o
+src/*.o

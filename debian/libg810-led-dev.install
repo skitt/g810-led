@@ -1,0 +1,4 @@
+#!/bin/sh
+
+echo usr/lib/libg810-led.so usr/lib/$(dpkg-architecture -qDEB_HOST_MULTIARCH)/
+echo usr/include

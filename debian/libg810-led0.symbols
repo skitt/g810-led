@@ -1,0 +1,42 @@
+libg810-led.so.0 libg810-led0 #MINVER#
+* Build-Depends-Package: libg810-led-dev
+ (c++)"LedKeyboard::close()@Base" 0.2.7
+ (c++)"LedKeyboard::commit()@Base" 0.2.7
+ (c++)"LedKeyboard::DeviceInfo::~DeviceInfo()@Base" 0.2.7
+ (c++)"LedKeyboard::DeviceInfo::~DeviceInfo()@Base" 0.2.7
+ (c++)"LedKeyboard::getCurrentDevice()@Base" 0.2.7
+ (c++)"LedKeyboard::getKeyboardModel()@Base" 0.2.7
+ (c++)"LedKeyboard::getKeyGroupAddress(LedKeyboard::KeyAddressGroup)@Base" 0.2.7
+ (c++)"LedKeyboard::isOpen()@Base" 0.2.7
+ (c++)"LedKeyboard::~LedKeyboard()@Base" 0.2.7
+ (c++)"LedKeyboard::listKeyboards()@Base" 0.2.7
+ (c++)"LedKeyboard::open()@Base" 0.2.7
+ (c++)"LedKeyboard::open(unsigned short, unsigned short, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)@Base" 0.2.7
+ (c++)"LedKeyboard::sendDataInternal(std::vector<unsigned char, std::allocator<unsigned char> >&)@Base" 0.2.7
+ (c++)"LedKeyboard::setAllKeys(LedKeyboard::Color)@Base" 0.2.7
+ (c++)"LedKeyboard::setGKeysMode(unsigned char)@Base" 0.2.7
+ (c++)"LedKeyboard::setGroupKeys(LedKeyboard::KeyGroup, LedKeyboard::Color)@Base" 0.2.7
+ (c++)"LedKeyboard::setKey(LedKeyboard::KeyValue)@Base" 0.2.7
+ (c++)"LedKeyboard::setKeys(std::vector<LedKeyboard::KeyValue, std::allocator<LedKeyboard::KeyValue> >)@Base" 0.2.7
+ (c++)"LedKeyboard::setMNKey(unsigned char)@Base" 0.2.7
+ (c++)"LedKeyboard::setMRKey(unsigned char)@Base" 0.2.7
+ (c++)"LedKeyboard::setNativeEffect(LedKeyboard::NativeEffect, LedKeyboard::NativeEffectPart, std::chrono::duration<unsigned short, std::ratio<1l, 1000l> >, LedKeyboard::Color, LedKeyboard::NativeEffectStorage)@Base" 0.3.1
+ (c++)"LedKeyboard::setRegion(unsigned char, LedKeyboard::Color)@Base" 0.2.7
+ (c++)"LedKeyboard::setStartupMode(LedKeyboard::StartupMode)@Base" 0.2.7
+# STL leakage follows...
+ (c++|optional)"std::ctype<char>::do_widen(char) const@Base" 0.2.7
+ (c++|optional)"std::vector<LedKeyboard::Key, std::allocator<LedKeyboard::Key> >::operator=(std::vector<LedKeyboard::Key, std::allocator<LedKeyboard::Key> > const&)@Base" 0.2.7
+ (c++|optional)"std::vector<unsigned char, std::allocator<unsigned char> >::_M_fill_insert(__gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned long, unsigned char const&)@Base" 0.2.7
+ (c++|optional)"void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag)@Base" 0.3.1
+ (c++|optional)"void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@Base" 0.3.1
+ (c++|optional)"void std::vector<LedKeyboard::DeviceInfo, std::allocator<LedKeyboard::DeviceInfo> >::_M_emplace_back_aux<LedKeyboard::DeviceInfo const&>(LedKeyboard::DeviceInfo const&)@Base" 0.3.1
+ (c++|optional)"void std::vector<LedKeyboard::DeviceInfo, std::allocator<LedKeyboard::DeviceInfo> >::_M_realloc_insert<LedKeyboard::DeviceInfo const&>(__gnu_cxx::__normal_iterator<LedKeyboard::DeviceInfo*, std::vector<LedKeyboard::DeviceInfo, std::allocator<LedKeyboard::DeviceInfo> > >, LedKeyboard::DeviceInfo const&)@Base" 0.3.1
+ (c++|optional)"void std::vector<LedKeyboard::KeyValue, std::allocator<LedKeyboard::KeyValue> >::emplace_back<LedKeyboard::KeyValue>(LedKeyboard::KeyValue&&)@Base" 0.2.7
+ (c++|optional)"void std::vector<LedKeyboard::KeyValue, std::allocator<LedKeyboard::KeyValue> >::_M_emplace_back_aux<LedKeyboard::KeyValue>(LedKeyboard::KeyValue&&)@Base" 0.3.1
+ (c++|optional)"void std::vector<LedKeyboard::KeyValue, std::allocator<LedKeyboard::KeyValue> >::_M_realloc_insert<LedKeyboard::KeyValue const&>(__gnu_cxx::__normal_iterator<LedKeyboard::KeyValue*, std::vector<LedKeyboard::KeyValue, std::allocator<LedKeyboard::KeyValue> > >, LedKeyboard::KeyValue const&)@Base" 0.3.1
+ (c++|optional)"void std::vector<unsigned char, std::allocator<unsigned char> >::emplace_back<unsigned char>(unsigned char&&)@Base" 0.2.7
+ (c++|optional)"void std::vector<unsigned char, std::allocator<unsigned char> >::_M_assign_aux<unsigned char const*>(unsigned char const*, unsigned char const*, std::forward_iterator_tag)@Base" 0.2.7
+ (c++|optional)"void std::vector<unsigned char, std::allocator<unsigned char> >::_M_emplace_back_aux<unsigned char>(unsigned char&&)@Base" 0.3.1
+ (c++|optional)"void std::vector<unsigned char, std::allocator<unsigned char> >::_M_insert_aux<unsigned char>(__gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char&&)@Base" 0.3.1
+ (c++|optional)"void std::vector<unsigned char, std::allocator<unsigned char> >::_M_realloc_insert<unsigned char const&>(__gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char const&)@Base" 0.3.1
+ (c++|optional)"void std::vector<unsigned char, std::allocator<unsigned char> >::_M_realloc_insert<unsigned char>(__gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned char&&)@Base" 0.3.1

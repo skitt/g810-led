@@ -1,0 +1,5 @@
+g810-led (0.3.1-1) unstable; urgency=medium
+
+  * Initial release (Closes: #856158).
+
+ -- Stephen Kitt <skitt@debian.org>  Sun, 13 Jan 2019 18:18:56 +0100

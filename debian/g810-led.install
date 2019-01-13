@@ -1,0 +1,4 @@
+debian/profile etc/g810-led
+debian/reboot etc/g810-led
+lib/systemd
+usr/bin
