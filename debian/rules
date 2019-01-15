@@ -10,6 +10,10 @@ override_dh_auto_build:
 
 override_dh_auto_install:
 	make setup install-lib install-dev SYSTEMDDIR=/lib/systemd/ DESTDIR=$(CURDIR)/debian/tmp
-	mv debian/tmp/etc/udev/rules.d/g810-led.rules debian/g810-led.udev
+	cp udev/g810-led.rules debian/g810-led.udev
+	cp systemd/g810-led-reboot.service debian/g810-led.g810-led-reboot.service
 	rm -rf debian/tmp/etc
 	mkdir -p debian/tmp/usr/share/doc/g810-led/examples
+
+override_dh_installsystemd:
+	dh_installsystemd --no-stop-on-upgrade --no-start --name=g810-led-reboot

@@ -1,5 +1,12 @@
+g810-led (0.3.1-2) unstable; urgency=medium
+
+  * Avoid failing the build when systemd isn’t installed.
+    Closes: #919431.
+
+ -- Stephen Kitt <skitt@debian.org>  Tue, 15 Jan 2019 23:16:52 +0100
+
 g810-led (0.3.1-1) unstable; urgency=medium
 
-  * Initial release (Closes: #856158).
+  * Initial release. Closes: #856158.
 
  -- Stephen Kitt <skitt@debian.org>  Sun, 13 Jan 2019 18:18:56 +0100
