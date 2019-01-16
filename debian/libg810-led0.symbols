@@ -20,13 +20,15 @@ libg810-led.so.0 libg810-led0 #MINVER#
  (c++)"LedKeyboard::setKeys(std::vector<LedKeyboard::KeyValue, std::allocator<LedKeyboard::KeyValue> >)@Base" 0.2.7
  (c++)"LedKeyboard::setMNKey(unsigned char)@Base" 0.2.7
  (c++)"LedKeyboard::setMRKey(unsigned char)@Base" 0.2.7
- (c++)"LedKeyboard::setNativeEffect(LedKeyboard::NativeEffect, LedKeyboard::NativeEffectPart, std::chrono::duration<unsigned short, std::ratio<1l, 1000l> >, LedKeyboard::Color, LedKeyboard::NativeEffectStorage)@Base" 0.3.1
+ (c++|arch-bits=32)"LedKeyboard::setNativeEffect(LedKeyboard::NativeEffect, LedKeyboard::NativeEffectPart, std::chrono::duration<unsigned short, std::ratio<1ll, 1000ll> >, LedKeyboard::Color, LedKeyboard::NativeEffectStorage)@Base" 0.3.1
+ (c++|arch-bits=64)"LedKeyboard::setNativeEffect(LedKeyboard::NativeEffect, LedKeyboard::NativeEffectPart, std::chrono::duration<unsigned short, std::ratio<1l, 1000l> >, LedKeyboard::Color, LedKeyboard::NativeEffectStorage)@Base" 0.3.1
  (c++)"LedKeyboard::setRegion(unsigned char, LedKeyboard::Color)@Base" 0.2.7
  (c++)"LedKeyboard::setStartupMode(LedKeyboard::StartupMode)@Base" 0.2.7
 # STL leakage follows...
  (c++|optional)"std::ctype<char>::do_widen(char) const@Base" 0.2.7
  (c++|optional)"std::vector<LedKeyboard::Key, std::allocator<LedKeyboard::Key> >::operator=(std::vector<LedKeyboard::Key, std::allocator<LedKeyboard::Key> > const&)@Base" 0.2.7
- (c++|optional)"std::vector<unsigned char, std::allocator<unsigned char> >::_M_fill_insert(__gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned long, unsigned char const&)@Base" 0.2.7
+ (c++|optional|arch-bits=32)"std::vector<unsigned char, std::allocator<unsigned char> >::_M_fill_insert(__gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned int, unsigned char const&)@Base" 0.2.7
+ (c++|optional|arch-bits=64)"std::vector<unsigned char, std::allocator<unsigned char> >::_M_fill_insert(__gnu_cxx::__normal_iterator<unsigned char*, std::vector<unsigned char, std::allocator<unsigned char> > >, unsigned long, unsigned char const&)@Base" 0.2.7
  (c++|optional)"void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char*>(char*, char*, std::forward_iterator_tag)@Base" 0.3.1
  (c++|optional)"void std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_construct<char const*>(char const*, char const*, std::forward_iterator_tag)@Base" 0.3.1
  (c++|optional)"void std::vector<LedKeyboard::DeviceInfo, std::allocator<LedKeyboard::DeviceInfo> >::_M_emplace_back_aux<LedKeyboard::DeviceInfo const&>(LedKeyboard::DeviceInfo const&)@Base" 0.3.1
