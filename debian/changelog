@@ -1,9 +1,9 @@
-g810-led (0.3.2-1) UNRELEASED; urgency=medium
+g810-led (0.3.2-1) unstable; urgency=medium
 
   * New upstream release.
   * Adjust symbols for 32-bit architectures.
 
- -- Stephen Kitt <skitt@debian.org>  Wed, 16 Jan 2019 21:45:18 +0100
+ -- Stephen Kitt <skitt@debian.org>  Wed, 16 Jan 2019 21:47:33 +0100
 
 g810-led (0.3.1-2) unstable; urgency=medium
 
